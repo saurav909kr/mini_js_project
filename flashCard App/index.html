@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>FlashCard App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="add-flashcard-cont">
+            <button id="Add-flashcard">Add Flashcard</button>
+        </div>
+        <div id="card-con">
+            <div class="cardlist-container"></div>
+        </div>
+    </div>
+    <div class="question-container hide"
+     id="add-question-card">
+         <h2>Add Flashcard</h2>
+         <div class="wrapper">
+            <div class="error-con">
+            <span id="error" class="hide">Field cannot be empty!</span>
+            </div>
+            <i class="fa-solid fa-xmark" id="close-btn"></i>
+         </div>
+         <label for="question">Question:</label>
+         <textarea class="input" id="question" placeholder="Type the question here..." rows="4"></textarea>
+         <label for="answer">Answer:</label>
+         <textarea class="input" id="answer" placeholder="Type the answer here..." rows="4"></textarea>
+         <button id="save-btn">Save</button>
+    </div>
+  <script src="flashcard.js"></script>
+</body>
+</html>

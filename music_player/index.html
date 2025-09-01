@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>music_player</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="music-player">
+      <button id="playlist">
+        <i class="fa-solid fa-angle-down"></i>
+      </button>
+      <img src="song_image.jpeg" alt="song-image" id="song-image">
+      <div class="song-detail">
+        <p id="song_name">Hum tum hai</p>
+        <p id="song_artist">Arjit Singh</p>
+      </div>
+      <div class="player-option">
+        <button id="suffle">
+          <i class="fa-solid fa-shuffle"></i>
+        </button>
+        <button id="prev">
+          <i class="fa-solid fa-backward"></i>
+        </button>
+        <button id="play" class="">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button id="pause" class="hide">
+          <i class="fa-solid fa-pause"></i>
+        </button>
+        <button id="next">
+          <i class="fa-solid fa-forward"></i>
+        </button>
+        <button id="repeat">
+          <i class="fa-solid fa-repeat"></i>
+        </button>
+      </div>
+      <audio src="" id="audio" preload="metadata"></audio>
+      <div id="progressbar">
+        <div id="current_progressBar"></div>
+      </div>
+      <div class="time-conatiner">
+        <span id="current_time">0:00</span>
+        <span id="max-duration">0:00</span>
+      </div>
+      <div id="playlist_conatiner" class="hide">
+        <button id="close_button">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <ul id="playlist_song">
+          </div>
+        </ul>
+      </div>
+      <div id="playlist_container_1" class="hide">
+            <button id="close_button_1">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul id="playlist_song_1">
+            </ul>
+    </div>
+  </div>
+  <script src="music.js"></script>
+  <script src="music.js"></script>
+</body>
+
+</html>

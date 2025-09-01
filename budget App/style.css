@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: aliceblue;
+}
+.wrapper{
+    width: 90%;
+    font-size: 16px;
+    max-width: 43.75em;
+    margin: 1em auto;
+}
+
+.container{
+    width: 100%;
+}
+.sub-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 3em;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.flex-space{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.wrapper h3{
+color: rgb(47, 45, 45);
+font-weight: 600;
+margin-bottom: 0.6em;
+}
+.wrapper p {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.container input{
+    display: block;
+    width: 100%;
+    padding: 0.4em .3em;
+    border: 1px solid rgb(157, 159, 160);
+    border-radius: .3em;
+    color: rgb(93, 91, 91);
+    outline: none;
+    font-weight: 400;
+    margin-top: .4em;
+}
+.container input:focus{
+    border-color: aquamarine;
+}
+
+.total-amount-conatiner,
+.total-expance-container{
+    background-color: white;
+    padding: 1.25em .9em;
+    border-radius: .3em;
+    box-shadow: 0 .6em 1.2em rgb(170, 169, 169);
+}
+.output-conatiner{
+    background-color: rgb(70, 135, 205);
+    margin: 1em 0;
+    padding: .5em .6em;
+    color: white;
+    border-radius: .2em;
+    margin-top: 1.6em;
+}
+
+.output-conatiner p {
+    font-weight: 500;
+    margin-bottom: .4em;
+}
+.output-conatiner span {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    color:white ;
+}
+
+button{
+    font-size: .9em;
+    margin-top: 1em;
+    padding: .4em .4em;
+    border: none;
+    outline: none;
+    background-color:#4687cd;
+    border-radius: .2em;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+.list{
+    background-color: white;
+    padding: 1.3em 1.4em;
+    box-shadow: 0 .6em  1em rgb(148, 146, 146);
+    border-radius: .3em;
+    margin-top: 1.6em;
+}
+.sublist-content{
+    width: 100%;
+    border-left: .3em solid #587ef4;
+    margin-bottom: .3em;
+}
+.product {
+    font-weight: 500;
+    margin-left: 1.5em;
+    color: rgb(70, 135, 205);
+}
+
+.amount {
+    color: rgb(70, 135, 205);
+    margin-left: 20%;
+}
+
+.hide{
+    display: none;
+}
+.error{
+    color: #ff465a;
+}
+
+.edit,
+.delete{
+    background-color:transparent;
+    cursor: pointer;
+    margin-right: 1.5em;
+    border: none;
+    color: #4687cd;
+}
+.fa-solid{
+    margin-bottom: 15px;
+};

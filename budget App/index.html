@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome via CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Buget page</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="sub-container">
+                <div class="total-amount-conatiner">
+                    <h3>Budget</h3>
+                    <p class="hide error" id="buget-error">
+                        Value cannot be empty or <br> negative
+                    </p>
+                    <input type="number" id="total-amount" placeholder="Enter total Amount">
+                    <button class="summit" id="total-amount-button">Set Budget</button>
+                </div>
+                <div class="total-expance-container">
+                    <h3>Expenses</h3>
+                    <p class="hide error" id="product-title-error">
+                        Value cannot be empty
+                    </p>
+                    <input type="text" id="product-title" class="product-title" placeholder="Enter title product">
+                    <input type="number" id="user-amount" placeholder="Enter cost of product">
+                    <button class="submit" id="check-amount">Check Amount</button>
+                </div>
+            </div>
+            <div class="output-conatiner flex-space">
+                <div>
+                    <p>Total Buget</p>
+                    <span id="amount">0</span>
+                </div>
+                <div>
+                    <p>Expenses</p>
+                    <span id="expanditure-value">0</span>
+                </div>
+                <div>
+                    <p>Balance</p>
+                    <span id="balance-amount">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="list">
+            <h3>expance List</h3>
+            <div class="list-conatiner" id="list"></div>
+        </div>
+    </div>
+    <script src="budget.js"></script>
+</body>
+
+</html>
